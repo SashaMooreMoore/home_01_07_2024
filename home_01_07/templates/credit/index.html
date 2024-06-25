@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit</title>
+</head>
+<body>
+    <div style="margin: auto; width: 400px;">
+        <p><i>У меня не получается посчитать по формуле</i></p>
+        <p><i>Каждый раз какая то ерунда выходит</i></p><hr>
+        {% for i in credits %}
+            <p>{{i.name}} - Платеж: {{i.payment}}</p>
+        {% endfor %}
+    </div>
+</body>
+</html>
